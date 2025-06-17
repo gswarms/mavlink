@@ -27,7 +27,7 @@
 # cd /tmp/mavlink && ./scripts/update_c_library.sh &> /dev/null
 
 function generate_headers() {
-python pymavlink/tools/mavgen.py \
+python3 pymavlink/tools/mavgen.py \
     --output $CLIBRARY_PATH \
     --lang C \
     --wire-protocol $2.0 \
