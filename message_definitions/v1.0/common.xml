@@ -1936,7 +1936,7 @@
         <param index="1" label="Distance" units="m"   >Camera trigger distance. 0 to stop triggering.</param>
         <param index="2" label="Shutter" units="ms"    increment="1" default="0">Camera shutter integration time. 0 to ignore</param>
         <param index="3" label="Min Interval" units="ms"     increment="1" default="0">The minimum interval in which the camera is capable of taking subsequent pictures repeatedly. 0 to ignore.</param>
-        <param index="4" label="Positions" minValue="2" increment="1">Total number of roll positions at which the camera will capture photos (images captures spread evenly across the limits defined by param5).</param>
+        <param index="4" label="Positions" increment="1">Total number of roll positions at which the camera will capture photos (images captures spread evenly across the limits defined by param5).</param>
         <param index="5" label="Roll Angle" units="deg"    default="0">Angle limits that the camera can be rolled to left and right of center.</param>
         <param index="6" label="Pitch Angle" units="deg"     default="0">Fixed pitch angle that the camera will hold in oblique mode if the mount is actuated in the pitch axis.</param>
         <param index="7">Empty</param>
@@ -2394,7 +2394,7 @@
         <description>Fence vertex for an inclusion polygon (the polygon must not be self-intersecting). The vehicle must stay within this area. Minimum of 3 vertices required.
           The vertices for a polygon must be sent sequentially, each with param1 set to the total number of vertices in the polygon.
         </description>
-        <param index="1" label="Vertex Count" minValue="3" increment="1">Polygon vertex count. This is the number of vertices in the current polygon (all vertices will have the same number).</param>
+        <param index="1" label="Vertex Count" increment="1">Polygon vertex count. This is the number of vertices in the current polygon (all vertices will have the same number).</param>
         <param index="2" label="Inclusion Group"    increment="1">Vehicle must be inside ALL inclusion zones in a single group, vehicle must be inside at least one group, must be the same for all points in each polygon</param>
         <param index="3">Reserved</param>
         <param index="4">Reserved</param>
@@ -2406,7 +2406,7 @@
         <description>Fence vertex for an exclusion polygon (the polygon must not be self-intersecting). The vehicle must stay outside this area. Minimum of 3 vertices required.
           The vertices for a polygon must be sent sequentially, each with param1 set to the total number of vertices in the polygon.                
         </description>
-        <param index="1" label="Vertex Count" minValue="3" increment="1">Polygon vertex count. This is the number of vertices in the current polygon (all vertices will have the same number).</param>
+        <param index="1" label="Vertex Count" increment="1">Polygon vertex count. This is the number of vertices in the current polygon (all vertices will have the same number).</param>
         <param index="2">Reserved</param>
         <param index="3">Reserved</param>
         <param index="4">Reserved</param>
