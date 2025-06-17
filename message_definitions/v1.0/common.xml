@@ -7586,5 +7586,16 @@
       <field type="int16_t" name="temperature" units="cdegC">Temperature</field>
       <field type="uint16_t" name="humidity" units="c%">Humidity</field>
     </message>
+    <message id="669" name="INTERCEPTOR_DATA">
+      <description>Custom interceptor telemetry</description>
+      <field type="uint64_t" name="timestamp" units="us">Time since system boot</field>
+      <field type="uint8_t" name="id">Interceptor ID</field>
+      <field type="float" name="tgo">Time to go</field>
+      <field type="float" name="miss_distance">Miss distance</field>
+      <field type="float" name="position_std_norm">Position std norm</field>
+      <field type="uint32_t" name="substate">Substate</field>
+      <field type="uint8_t" name="target_detected">Target detection flag</field>
+      <field type="float[3]" name="estimated_relative_position">Estimated relative position [x,y,z]</field>
+    </message>
   </messages>
 </mavlink>
