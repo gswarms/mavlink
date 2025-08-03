@@ -8113,11 +8113,19 @@
       <field type="uint64_t" name="timestamp" units="us">Time since system boot</field>
       <field type="uint8_t" name="id">Interceptor ID</field>
       <field type="float" name="tgo">Time to go</field>
+      <field type="float" name="target_time_delay">Target measurement time delay</field>
       <field type="float" name="miss_distance">Miss distance</field>
       <field type="float" name="position_std_norm">Position std norm</field>
       <field type="uint32_t" name="substate">Substate</field>
       <field type="uint8_t" name="target_detected">Target detection flag</field>
       <field type="float[3]" name="estimated_relative_position">Estimated relative position [x,y,z]</field>
+      <field type="uint8_t" name="interceptor_active">Interceptor Active flag</field>
+      <field type="uint8_t" name="target_estimation_active">target_estimation_active flag</field>
+      <field type="uint8_t" name="camera_driver_active">camera_driver_active detection flag</field>
+      <field type="uint8_t" name="monitor_active">monitor_active detection flag</field>
+      <field type="uint8_t" name="recorder_active">recorder_active detection flag</field>
+      <field type="uint8_t" name="detector_active">detector_active detection flag</field>
+      <field type="uint8_t" name="osd_active">osd_active detection flag</field>
     </message>
   </messages>
 </mavlink>
